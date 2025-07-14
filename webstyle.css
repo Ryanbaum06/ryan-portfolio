@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styling */
+body {
+  font-family: 'Philosopher', sans-serif;
+  padding: 1rem;
+  line-height: 1.6;
+  background-color: #FDE5F7;
+  color: #BF5A89;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Responsive Banner */
+.banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Header and Nav */
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #BF5A89;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Sofia', cursive;
+  color: #E93989;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  border-bottom: 3px solid #BF5A89;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px solid #BF5A89;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Color Circles */
+.color-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1rem;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.primary {
+  background-color: #F29BE4;
+}
+
+.secondary {
+  background-color: #BF5A89;
+}
+
+.accent {
+  background-color: #E93989;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.animated {
+  animation: pulse 2s infinite;
+}
+
+/* Components */
+.custom-link {
+  color: #E93989;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-link:hover {
+  color: #BF5A89;
+  text-decoration: underline;
+}
+
+.custom-button {
+  background-color: #E93989;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #BF5A89;
+}
+
+.custom-quote {
+  border-left: 5px solid #BF5A89;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #734C70;
+  margin: 1rem 0;
+  background-color: #FCE8F8;
+}
+
+/* CSS Star */
+.css-star-shape {
+  width: 150px;
+  height: 150px;
+  background-color: #E93989;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%,
+    68% 57%, 79% 91%, 50% 70%,
+    21% 91%, 32% 57%, 2% 35%,
+    39% 35%
+  );
+  margin: 2rem auto;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  background-color: #BF5A89;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .color-circle {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 0.8rem;
+  }
+
+  .css-star-shape {
+    width: 120px;
+    height: 120px;
+  }
+}
+
